@@ -3,6 +3,9 @@ weather-workflow
 
 Weather forecast workflow using Baidu API
 
+![image](https://github.com/wensonsmith/weather-workflow/blob/master/baidu_weather.png)  
+
+![image](https://github.com/wensonsmith/weather-workflow/blob/master/baidu_weather-2.png)
 
 ### 使用百度车联网API，速度快
 
