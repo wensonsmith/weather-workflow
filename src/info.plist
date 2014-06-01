@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>Baidu Weather</string>
+	<key>connections</key>
+	<dict/>
+	<key>createdby</key>
+	<string>Wenson Smith</string>
+	<key>description</key>
+	<string>Weather forecast using Baidu API</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Baidu Weather</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>tq</string>
+				<key>runningsubtext</key>
+				<string>正在查询</string>
+				<key>script</key>
+				<string>require_once('weather.php');
+
+$weather = new Weather();
+
+//如果是制定城市查询，去掉这里的注释
+//$query = "{query}";
+
+
+//默认为北京市
+$query = "北京";
+$weather-&gt;getWeather($query);
+
+</string>
+				<key>subtext</key>
+				<string>请输入城市名称</string>
+				<key>title</key>
+				<string>百度天气预报</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>32976DE4-B029-4681-A930-AF5904492FB0</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>32976DE4-B029-4681-A930-AF5904492FB0</key>
+		<dict>
+			<key>ypos</key>
+			<real>150</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>www.seekbetter.me</string>
+</dict>
+</plist>
