@@ -1,6 +1,11 @@
 weather-workflow
 ================
 
+###UPDATE
+
+- 2016-03-07
+@chxj1992  添加根据IP自动获取当前城市
+
 Weather forecast workflow using Baidu API
 
 ![image](https://github.com/wensonsmith/weather-workflow/raw/master/baidu_weather.png)  
